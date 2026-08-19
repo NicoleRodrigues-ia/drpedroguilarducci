@@ -179,6 +179,14 @@ section{padding:96px 0}
 .hero-photo img{border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);width:100%;height:auto;object-fit:cover}
 .hero-photo .badge-float{position:absolute;bottom:20px;left:-20px;background:#fff;color:var(--ink-900);border-radius:var(--radius-md);padding:14px 18px;box-shadow:var(--shadow-lg);font:700 14px var(--font-body);display:flex;align-items:center;gap:10px}
 .hero-photo .badge-float b{color:var(--teal-700);font-size:22px}
+/* selos translúcidos (estilo do botão ghost) sobre a foto */
+.hero-perks-float{list-style:none;position:absolute;top:22px;right:-22px;display:flex;flex-direction:column;gap:10px;align-items:flex-end;margin:0;padding:0}
+.hero-perks-float li{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font:600 13px var(--font-body);padding:9px 14px;border-radius:var(--radius-pill);box-shadow:0 8px 24px rgba(0,26,77,.25);white-space:nowrap}
+.hero-perks-float li svg.ic{width:16px;height:16px;color:#7FD1D1;flex-shrink:0}
+@media(max-width:960px){
+  .hero-perks-float{position:static;align-items:flex-start;margin-top:18px}
+  .hero-perks-float li{white-space:normal}
+}
 @media(max-width:960px){
   .hero-inner{grid-template-columns:1fr;gap:36px;padding:56px 0}
   .hero-copy h1{font-size:34px}

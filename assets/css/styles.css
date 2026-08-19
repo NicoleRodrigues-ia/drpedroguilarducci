@@ -126,13 +126,19 @@ section{padding:96px 0}
   .nav-links a:hover{color:#7FD1D1;background:none}
   .nav-links a.active{color:var(--teal-500)}
   .has-drop{width:100%}
-  /* esconde os títulos "Tratamentos" e "Condições"; mostra só os subitens, no mesmo estilo dos demais */
-  .nav-links a.drop-toggle{display:none}
-  .dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;background:none;padding:0;min-width:0}
+  /* acordeão: título com setinha; subitens ocultos até tocar */
+  .nav-links a.drop-toggle{display:inline-flex;justify-content:center;align-items:center;gap:8px;width:100%}
+  .drop-toggle::after{display:inline-block;width:8px;height:8px;margin:0 0 3px;opacity:.8;transition:transform .2s}
+  .has-drop.open .drop-toggle::after{transform:rotate(225deg);margin:3px 0 0}
+  .dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;background:none;padding:0;min-width:0;display:none}
+  .has-drop.open .dropdown{display:block;padding:2px 0 8px}
   .dropdown li{width:100%;text-align:center}
-  .dropdown a{display:block;padding:11px 8px;font-family:var(--font-display);font-weight:600;font-size:19px;color:#fff;border-radius:0}
-  .dropdown a:hover{color:#7FD1D1;background:none}
+  .dropdown a{display:block;padding:8px 8px;font-family:var(--font-body);font-weight:500;font-size:15.5px;color:var(--ink-on-dark);border-radius:0}
+  .dropdown a:hover{color:#fff;background:none}
   .dropdown a.active{color:var(--teal-500)}
+  /* não abrir por hover no mobile */
+  .has-drop:hover .dropdown,.has-drop:focus-within .dropdown{display:none}
+  .has-drop.open:hover .dropdown,.has-drop.open:focus-within .dropdown{display:block}
   .nav-cta{margin-top:28px;justify-content:center;font-size:17px;padding:14px 34px}
   body.menu-open{overflow:hidden}
   /* libera o overlay fixo do containing block criado pelo backdrop-filter */

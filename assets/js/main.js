@@ -40,8 +40,21 @@
   });
   close.addEventListener('click', closeMenu);
 
-  // Fecha ao navegar para outra página/âncora
-  menu.querySelectorAll('.nav-links a, .nav-cta').forEach(function (a) {
+  // Acordeão (mobile): "Tratamentos"/"Condições" abrem os subitens ao tocar
+  var mq = window.matchMedia('(max-width: 960px)');
+  menu.querySelectorAll('.has-drop > .drop-toggle').forEach(function (t) {
+    t.addEventListener('click', function (e) {
+      if (!mq.matches) return; // no desktop segue como link + hover
+      e.preventDefault();
+      var li = t.parentNode;
+      var isOpen = li.classList.contains('open');
+      menu.querySelectorAll('.has-drop.open').forEach(function (o) { o.classList.remove('open'); });
+      if (!isOpen) li.classList.add('open');
+    });
+  });
+
+  // Fecha ao navegar para outra página/âncora (exceto os toggles do acordeão)
+  menu.querySelectorAll('.nav-links a:not(.drop-toggle), .nav-cta').forEach(function (a) {
     a.addEventListener('click', closeMenu);
   });
 

@@ -56,7 +56,7 @@
   var ARROW_L = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>';
   var ARROW_R = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
 
-  document.querySelectorAll('.video-grid, .reviews-grid').forEach(function (grid) {
+  document.querySelectorAll('.video-grid, .reviews-grid, .trust-grid').forEach(function (grid) {
     var wrap = document.createElement('div');
     wrap.className = 'carousel-wrap';
     grid.parentNode.insertBefore(wrap, grid);

@@ -175,8 +175,6 @@ section{padding:96px 0}
 .hero-perks{list-style:none;margin:16px 0 0;padding:0;max-width:560px}
 .hero-perks li{position:relative;padding-left:26px;margin-bottom:6px;color:var(--ink-on-dark);font-size:17px;line-height:1.6}
 .hero-perks li::before{content:"";position:absolute;left:2px;top:11px;width:8px;height:8px;border-radius:50%;background:var(--teal-500)}
-.hero-copy p.hero-note{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14)}
-.hero-copy p.hero-note em{font-style:italic;color:#7FD1D1}
 .hero-photo{position:relative}
 .hero-photo img{border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);width:100%;height:auto;object-fit:cover}
 .hero-photo .badge-float{position:absolute;bottom:20px;left:-20px;background:#fff;color:var(--ink-900);border-radius:var(--radius-md);padding:14px 18px;box-shadow:var(--shadow-lg);font:700 14px var(--font-body);display:flex;align-items:center;gap:10px}
@@ -221,6 +219,7 @@ section{padding:96px 0}
 
 /* Grade de cards de tratamento (2/2/1 — última centralizada, mesmo tamanho) */
 .cards-trat{display:flex;flex-wrap:wrap;justify-content:center;gap:24px}
+.section-close{text-align:center;font-style:italic;color:var(--teal-700);font-size:18px;margin-top:36px}
 .cards-trat .card{flex:0 1 calc(50% - 12px);display:grid;grid-template-columns:auto 1fr;column-gap:22px;align-content:start;padding:30px 32px}
 .cards-trat .card .icon{grid-column:1;grid-row:1 / span 3;margin:0}
 .cards-trat .card h3{grid-column:2;margin-bottom:8px}

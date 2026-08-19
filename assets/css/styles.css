@@ -127,7 +127,7 @@ section{padding:96px 0}
   .nav-links a.active{color:var(--teal-500)}
   .has-drop{width:100%}
   /* esconde os títulos "Tratamentos" e "Condições"; mostra só os subitens, no mesmo estilo dos demais */
-  .drop-toggle{display:none}
+  .nav-links a.drop-toggle{display:none}
   .dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;background:none;padding:0;min-width:0}
   .dropdown li{width:100%;text-align:center}
   .dropdown a{display:block;padding:11px 8px;font-family:var(--font-display);font-weight:600;font-size:19px;color:#fff;border-radius:0}

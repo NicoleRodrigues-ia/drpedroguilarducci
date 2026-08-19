@@ -122,14 +122,17 @@ section{padding:96px 0}
   /* links centralizados */
   .nav-links{flex-direction:column;align-items:center;gap:0;width:100%;max-width:420px}
   .nav-links>li{width:100%;text-align:center;border:none}
-  .nav-links a{display:block;padding:15px 8px;font-family:var(--font-display);font-weight:600;font-size:22px;color:#fff;border-radius:0}
+  .nav-links a{display:block;padding:11px 8px;font-family:var(--font-display);font-weight:600;font-size:19px;color:#fff;border-radius:0}
   .nav-links a:hover{color:#7FD1D1;background:none}
   .nav-links a.active{color:var(--teal-500)}
   .has-drop{width:100%}
-  .drop-toggle::after{display:none}
-  .dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;background:none;padding:2px 0 12px;min-width:0}
-  .dropdown a{color:var(--ink-on-dark);font-family:var(--font-body);font-weight:500;font-size:15.5px;padding:7px 8px}
-  .dropdown a:hover{color:#fff;background:none}
+  /* esconde os títulos "Tratamentos" e "Condições"; mostra só os subitens, no mesmo estilo dos demais */
+  .drop-toggle{display:none}
+  .dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;background:none;padding:0;min-width:0}
+  .dropdown li{width:100%;text-align:center}
+  .dropdown a{display:block;padding:11px 8px;font-family:var(--font-display);font-weight:600;font-size:19px;color:#fff;border-radius:0}
+  .dropdown a:hover{color:#7FD1D1;background:none}
+  .dropdown a.active{color:var(--teal-500)}
   .nav-cta{margin-top:28px;justify-content:center;font-size:17px;padding:14px 34px}
   body.menu-open{overflow:hidden}
   /* libera o overlay fixo do containing block criado pelo backdrop-filter */

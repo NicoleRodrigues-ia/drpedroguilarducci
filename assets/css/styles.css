@@ -188,8 +188,11 @@ section{padding:96px 0}
 .hero-perks-float li:nth-child(2){top:46%;left:-30px}
 .hero-perks-float li:nth-child(3){bottom:26px;right:-18px}
 @media(max-width:960px){
-  .hero-perks-float{position:static;inset:auto;display:flex;flex-direction:column;gap:10px;margin-top:18px}
-  .hero-perks-float li{position:static;max-width:none}
+  .hero-perks-float li{font-size:12px;padding:8px 12px 8px 10px;max-width:180px;gap:8px}
+  .hero-perks-float li svg.ic{width:15px;height:15px}
+  .hero-perks-float li:nth-child(1){top:14px;right:-10px}
+  .hero-perks-float li:nth-child(2){top:46%;left:-12px}
+  .hero-perks-float li:nth-child(3){bottom:14px;right:-8px}
 }
 @media(max-width:960px){
   .hero-inner{grid-template-columns:1fr;gap:36px;padding:56px 0}

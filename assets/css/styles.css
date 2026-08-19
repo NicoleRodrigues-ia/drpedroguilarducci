@@ -229,6 +229,9 @@ section{padding:96px 0}
   .trust-item{flex:0 0 auto;width:250px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:14px 16px}
   @keyframes trust-marquee{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 7px))}}
 }
+/* clones só existem para o loop do mobile */
+.trust-clone{display:none}
+@media(max-width:860px){.trust-clone{display:flex}}
 @media(prefers-reduced-motion:reduce){.trust-grid{animation:none}}
 
 /* =========================================================

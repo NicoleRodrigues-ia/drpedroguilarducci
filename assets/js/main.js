@@ -107,6 +107,7 @@
   items.forEach(function (it) {
     var clone = it.cloneNode(true);
     clone.setAttribute('aria-hidden', 'true');
+    clone.classList.add('trust-clone');
     grid.appendChild(clone);
   });
 })();

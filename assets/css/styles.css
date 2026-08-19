@@ -177,6 +177,7 @@ section{padding:96px 0}
 .hero-perks li::before{content:"";position:absolute;left:2px;top:11px;width:8px;height:8px;border-radius:50%;background:var(--teal-500)}
 .hero-photo{position:relative}
 .hero-photo img{border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);width:100%;height:auto;object-fit:cover}
+.hero-photo-cutout img{border-radius:0;box-shadow:none;filter:drop-shadow(0 30px 50px rgba(0,10,40,.45))}
 .hero-photo .badge-float{position:absolute;bottom:20px;left:-20px;background:#fff;color:var(--ink-900);border-radius:var(--radius-md);padding:14px 18px;box-shadow:var(--shadow-lg);font:700 14px var(--font-body);display:flex;align-items:center;gap:10px}
 .hero-photo .badge-float b{color:var(--teal-700);font-size:22px}
 /* selos translúcidos (estilo do botão ghost) sobre a foto */

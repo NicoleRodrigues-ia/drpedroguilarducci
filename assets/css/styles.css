@@ -396,6 +396,7 @@ section{padding:96px 0}
 .unit-card .u-tag{display:inline-block;font:600 12px var(--font-body);letter-spacing:.04em;text-transform:uppercase;color:var(--teal-700);background:var(--teal-50);border-radius:var(--radius-pill);padding:4px 12px;margin-bottom:12px}
 .unit-card h3{font-size:20px;margin-bottom:8px}
 .unit-card p{font-size:15px;color:var(--ink-600);margin-bottom:6px}
+.unit-card .u-btn{margin-top:16px;font-size:15px;padding:12px 22px;width:100%;justify-content:center}
 @media(max-width:760px){.unit-grid{grid-template-columns:1fr}}
 
 /* =========================================================

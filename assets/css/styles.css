@@ -388,7 +388,8 @@ section{padding:96px 0}
 /* =========================================================
    UNIDADES
    ========================================================= */
-.unit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.unit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:1000px){.unit-grid{grid-template-columns:repeat(2,1fr)}}
 .unit-card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
 .unit-card .u-map{aspect-ratio:16/8;background:var(--gray-100);border:none;width:100%;filter:grayscale(.15)}
 .unit-card .u-body{padding:24px 26px}

@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "https://drpedroguilarducci.com.br/", "permanent": true },
+    { "source": "/index.html", "destination": "https://drpedroguilarducci.com.br/", "permanent": true },
+    { "source": "/blog/:slug.html", "destination": "https://drpedroguilarducci.com.br/:slug/", "permanent": true },
+    { "source": "/:dir/:slug.html", "destination": "https://drpedroguilarducci.com.br/:dir/:slug/", "permanent": true },
+    { "source": "/:slug.html", "destination": "https://drpedroguilarducci.com.br/:slug/", "permanent": true },
+    { "source": "/:path*", "destination": "https://drpedroguilarducci.com.br/:path*", "permanent": true }
+  ]
+}
